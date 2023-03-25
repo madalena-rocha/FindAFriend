@@ -4,6 +4,7 @@ onScroll();
 
 function onScroll() {
   activateMenuAtCurrentSection(home);
+  activateMenuAtCurrentSection(info);
 }
 
 function activateMenuAtCurrentSection(section) {

@@ -29,7 +29,7 @@ O perfil do desenvolvedor para este projeto é de Front-end Júnior.
 
 O desenvolvedor chega na FindAFriend para ajudar no desenvolvimento e suporte de novas ferramentas dentro do FindAFriend. O produto já está em produção e é necessário garantir todas as mudanças antes do final do trimestre para atender às expectativas dos investidores.
 
-## 🏃‍♂️ Sprint 01
+## 🏃‍♂️ Sprints
 
 ### 📖 História
 
@@ -37,12 +37,21 @@ Os investidores estão planejando uma expansão para a empresa e, para isso acon
 
 ### 📅 Datas
 
-- Data de início da sprint 01: 14/03/2023
-- Data de entrega da sprint 01: 21/03/2023
+Sprint 01:
+
+- Data de início: 14/03/2023
+- Data de entrega: 21/03/2023
+
+Sprint 02:
+
+- Data de início: 21/03/2023
+- Data de entrega: 28/03/2023
 
 ### 🚀 Entregáveis
 
 Durante a primeira sprint, é preciso entregar a homepage da landing page para as versões mobile e desktop.
+
+Durante a segunda sprint, é preciso entregar a segunda seção da landing page para as versões mobile e desktop.
 
 ### 🔗 Link do Figma
 
