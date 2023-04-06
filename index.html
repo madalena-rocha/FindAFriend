@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav id="navigation">
@@ -91,7 +95,7 @@
               <li><a onclick="closeMenu()" href="#home">Home</a></li>
               <li><a onclick="closeMenu()" href="#info">Sobre o app</a></li>
               <li>
-                <a onclick="closeMenu()" href="">Animais disponíveis</a>
+                <a onclick="closeMenu()" href="#animals">Animais disponíveis</a>
               </li>
               <li>
                 <a onclick="closeMenu()" href="">Sobre a FindAFriend</a>
@@ -276,6 +280,50 @@
       </div>
     </section>
 
+    <section id="animals">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>Há muitos amigos esperando por você!</h2>
+          </header>
+
+          <div class="content">
+            <p>O FiendAFriend conecta pessoas que estão procurando por um animal de estimação com animais que precisam de um lar amoroso. É fácil de usar e você pode navegar por uma variedade de animais para encontrar aquele que melhor se adapta ao seu estilo de vida e necessidades.</p>
+            <a class="button" href="#">Acesse agora</a>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <div class="swiper-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/hamilton.png" alt="Gato listrado amarelo com branco dormindo.">
+                  <span>Hamilton</span>
+                </div>
+                
+                <div class="swiper-slide">
+                  <img src="./assets/cleiton.png" alt="Cachorro preto com creme olhando para a frente.">
+                  <span>Cleiton</span>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./assets/aldo.png" alt="Gato listrado preto com creme olhando para o lado.">
+                  <span>Aldo</span>
+                </div>
+              </div>
+
+              <div class="swiper-pagination hide"></div>
+
+              <div class="swiper-button-prev hide"></div>
+              <div class="swiper-button-next hide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

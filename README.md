@@ -6,8 +6,8 @@ O FindAFriend é o primeiro projeto do Green Chain Challenge, onde a equipe de d
 
 ## 📅 Datas
 
-- Data inicial do projeto: 14/03/2023
-- Data final do projeto: 11/04/2023
+- Início do projeto: 14/03/2023
+- Fim do projeto: 11/04/2023
 
 ## 🏢 Perfil da empresa
 
@@ -37,22 +37,18 @@ Os investidores estão planejando uma expansão para a empresa e, para isso acon
 
 ### 📅 Datas
 
-Sprint 01:
-
-- Data de início: 14/03/2023
-- Data de entrega: 21/03/2023
-
-Sprint 02:
-
-- Data de início: 21/03/2023
-- Data de entrega: 28/03/2023
+- Sprint 01: 14/03/2023 a 21/03/2023
+- Sprint 02: 21/03/2023 a 28/03/2023
+- Sprint 03: 28/03/2023 a 03/04/2023
 
 ### 🚀 Entregáveis
 
-Durante a primeira sprint, é preciso entregar a homepage da landing page para as versões mobile e desktop.
+<strong>Sprint 01:</strong> homepage da landing page para mobile e desktop.
 
-Durante a segunda sprint, é preciso entregar a segunda seção da landing page para as versões mobile e desktop.
+<strong>Sprint 02:</strong> segunda seção da landing page para mobile e desktop.
+
+<strong>Sprint 03:</strong> seção "Há muitos amigos esperando por você" para mobile e desktop, com informações sobre os animais disponíveis para adoção. A seção deve incluir fotos dos animais num componente de slide / carrosel, usando a biblioteca <a href="https://discord.com/channels/327861810768117763/1090276882202755124/1090276882202755124" target="_blank">Swiper</a>. O Slider deve rodar a partir da ação do usuário e também em um intervalo de tempo de 20s entre as fotos.
 
 ### 🔗 Link do Figma
 
-O projeto da landing page está disponível <a href="https://www.figma.com/community/file/1219640728562616972/GCC-%231---FindAFriend" target="_blank">aqui</a>.
+O projeto da landing page está disponível <a href="https://www.figma.com/community/file/1219640728562616972" target="_blank">aqui</a>.

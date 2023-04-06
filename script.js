@@ -5,6 +5,7 @@ onScroll();
 function onScroll() {
   activateMenuAtCurrentSection(home);
   activateMenuAtCurrentSection(info);
+  activateMenuAtCurrentSection(animals);
 }
 
 function activateMenuAtCurrentSection(section) {
@@ -40,3 +41,24 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove("menu-expanded");
 }
+
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  autoplay: {
+    delay: 20000,
+    disableOnInteraction: false
+  },
+});

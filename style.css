@@ -11,7 +11,8 @@
   --brand-primary: hsl(var(--hue), 75%, 58%);
   --brand-light: hsl(var(--hue), 85%, 63%);
   
-  --headline: hsl(209, 77%, 23%);
+  --headline-primary: hsl(209, 77%, 23%);
+  --headline-secondary: hsl(47, 87%, 66%);
   --paragraph: #000000;
   
   --border-light: hsla(0, 0%, 100%, 0.2);
@@ -71,7 +72,7 @@ section header h2 {
   line-height: 110%;
   letter-spacing: -0.02em;
 
-  color: var(--headline);
+  color: var(--headline-primary);
 }
 
 section .content h1 {
@@ -99,7 +100,7 @@ section .content p span {
 
 section .button {
   background: var(--bg-light);
-  color: var(--headline);
+  color: var(--headline-primary);
 
   border: none;
   border-radius: 0.87rem;
@@ -115,11 +116,12 @@ section .button {
   line-height: 105%;
   text-decoration: none;
 
-  transition: filter 200ms;
+  transition: all 200ms;
 }
 
 section .button:hover {
   filter: brightness(1.3);
+  transform: scale(1.1);
 }
 
 /*=== NAVIGATION ========================*/
@@ -289,6 +291,10 @@ body.menu-expanded .menu {
   height: 5.5rem;
 }
 
+#home .button:hover {
+  transform: scale(1.1);
+}
+
 /*=== INFO ==============================*/
 
 #info {
@@ -316,7 +322,6 @@ body.menu-expanded .menu {
 
 #info .card img {
   width: 3rem;
-  width: 3.3rem;
   margin-bottom: 2.9rem;
 }
 
@@ -334,12 +339,76 @@ body.menu-expanded .menu {
   background-repeat: no-repeat;
 }
 
+/*=== ANIMALS ===========================*/
+
+#animals {
+  height: 66.5rem;
+  margin: 2rem;
+  padding-block: 6rem;
+  background: var(--brand-light);
+  border-radius: 2rem;
+}
+
+#animals .wrapper {
+  padding-inline: 3.2rem;
+}
+
+#animals header h2 {
+  line-height: 90%;
+  text-align: center;
+  margin-bottom: 4rem;
+
+  color: var(--headline-secondary);
+}
+
+#animals .content p {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--bg-light);
+}
+
+#animals .button {
+  width: 100%;
+  height: 5.5rem;
+  margin-bottom: 3.1rem;
+}
+
+#animals .col-b {
+  position: absolute;
+}
+
+#animals .swiper-slide {
+  width: 83.12%;
+  display: flex;
+  flex-direction: column;
+
+  background: var(--bg-light);
+  border-radius: 1.83rem;
+}
+
+#animals .swiper-slide img {
+  width: 100%;
+  border: 2.74px solid var(--bg-light);
+  border-radius: 1.83rem;
+}
+
+#animals .swiper-slide span {
+  margin: 1.35rem auto;
+  line-height: 120%;
+  color: var(--headline-primary);
+}
+
+#animals .hide {
+  display: none;
+}
+
 /*=== RESPONSIVO ========================*/
 
 @media (min-width: 1024px) {
 
   /*=== GERAL =============================*/
-  
+
   .wrapper {
     width: 100%;
     margin-inline: 0;
@@ -413,6 +482,7 @@ body.menu-expanded .menu {
   .menu ul {
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
   }
 
   .open-menu,
@@ -542,5 +612,131 @@ body.menu-expanded .menu {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+  }
+  
+  /*=== ANIMALS ===========================*/
+
+  #animals {
+    height: auto;
+    margin-inline: 7.78vw;
+    padding-block: 10rem;
+  }
+
+  #animals .wrapper {
+    grid-template-columns: 28.89vw 34.03vw;
+    grid-template-areas: 'A B';
+    gap: 7.08vw;
+
+    padding-inline: 7.22vw;
+  }
+  
+  #animals .col-a,
+  #animals .col-b,
+  #animals .swiper-container {
+    position: relative;
+  }
+
+  #animals header h2 {
+    font-size: 4.8rem;
+    text-align: left;
+    margin-bottom: 11.6rem;
+  }
+
+  #animals .content p {
+    font-size: 2rem;
+    line-height: 2.2rem;
+
+    position: absolute;
+    width: 34.03vw;
+    top: 1rem;
+    left: 35.97vw;
+  }
+
+  #animals .button {
+    width: 23.1rem;
+    height: 7.2rem;
+  }
+
+  #animals .col-b {
+    height: 42.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  #animals .swiper {
+    width: 26.67vw;
+    border-radius: 2.74rem;
+
+    position: static;
+    margin-left: 0;
+  }
+
+  #animals .swiper-slide {
+    width: 100%;
+  }
+
+  #animals .swiper-slide img {
+    border: 4.11px solid var(--bg-light);
+    border-radius: 2.74rem;
+  }
+
+  #animals .swiper-slide span {
+    margin: 2rem auto 1.9rem;
+    font-weight: 700;
+    font-size: 2.47rem;
+  }
+    
+  #animals .hide {
+    display: flex;
+  }
+
+  #animals .swiper-pagination {
+    display: flex;
+    justify-content: center;
+
+    width: 26.67vw;
+    bottom: -2.5rem;
+
+    --swiper-pagination-color: var(--bg-light);
+  }
+
+  #animals .swiper-button-prev::after,
+  #animals .swiper-button-next::after {
+    font-size: 2.4rem;
+  }
+
+  #animals .swiper-button-prev,
+  #animals .swiper-button-next {
+    width: 5vw;
+    height: 5vw;
+    margin: 0;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    border-radius: 1.5rem;
+    transition: all 200ms;
+  }
+
+  #animals .swiper-button-prev:hover,
+  #animals .swiper-button-next:hover {
+    filter: brightness(1.3);
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  #animals .swiper-button-prev {
+    left: -7.22vw;
+
+    border: 1px solid var(--bg-light);
+    color: var(--bg-light);
+  }
+
+  #animals .swiper-button-next {
+    right: 0;
+
+    background: var(--bg-light);
+    color: var(--paragraph);
   }
 }
