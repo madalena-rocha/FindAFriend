@@ -6,6 +6,8 @@ function onScroll() {
   activateMenuAtCurrentSection(home);
   activateMenuAtCurrentSection(info);
   activateMenuAtCurrentSection(animals);
+  activateMenuAtCurrentSection(about);
+  activateMenuAtCurrentSection(contact);
 }
 
 function activateMenuAtCurrentSection(section) {
@@ -42,23 +44,41 @@ function closeMenu() {
   document.body.classList.remove("menu-expanded");
 }
 
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
+const animalsSwiper = new Swiper(".animals-swiper", {
+  direction: "horizontal",
   loop: true,
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   spaceBetween: 10,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   autoplay: {
     delay: 20000,
-    disableOnInteraction: false
+    disableOnInteraction: false,
+  },
+});
+
+const aboutSwiper = new Swiper(".about-swiper", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: "auto",
+  spaceBetween: 10,
+
+  autoplay: {
+    delay: 20000,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    1024: {
+      spaceBetween: 24,
+    },
   },
 });

@@ -40,6 +40,7 @@ Os investidores estão planejando uma expansão para a empresa e, para isso acon
 - Sprint 01: 14/03/2023 a 21/03/2023
 - Sprint 02: 21/03/2023 a 28/03/2023
 - Sprint 03: 28/03/2023 a 03/04/2023
+- Sprint 04: 04/04/2023 a 11/04/2023
 
 ### 🚀 Entregáveis
 
@@ -47,7 +48,9 @@ Os investidores estão planejando uma expansão para a empresa e, para isso acon
 
 <strong>Sprint 02:</strong> segunda seção da landing page para mobile e desktop.
 
-<strong>Sprint 03:</strong> seção "Há muitos amigos esperando por você" para mobile e desktop, com informações sobre os animais disponíveis para adoção. A seção deve incluir fotos dos animais num componente de slide / carrosel, usando a biblioteca <a href="https://discord.com/channels/327861810768117763/1090276882202755124/1090276882202755124" target="_blank">Swiper</a>. O Slider deve rodar a partir da ação do usuário e também em um intervalo de tempo de 20s entre as fotos.
+<strong>Sprint 03:</strong> seção "Há muitos amigos esperando por você" para mobile e desktop, com informações sobre os animais disponíveis para adoção. A seção deve incluir fotos dos animais num componente de slide / carrosel, usando a biblioteca <a href="https://efficient-sloth-d85.notion.site/Ferramenta-para-Slider-Swiper-d2058bd4e88449f7bb0ca47bd482aca2" target="_blank">Swiper</a>. O Slider deve rodar a partir da ação do usuário e também em um intervalo de tempo de 20s entre as fotos.
+
+<strong>Sprint 04:</strong> áreas "Sobre" e "Contato" para mobile e desktop, além do deploy do projeto no GitHub ou Vercel. A área "Sobre" tem cards com os diretores da FindAFriend. Na versão mobile, esses cards são um slider movimentado pelo toque. Na área "Contato", é necessário ter um link para o email nossomos@findafriend.com, onde o usuário ao clicar abre uma janela do leitor de emails com o endereço do destinatário preenchido e o assunto "Visitei sua página e preciso de mais informações".
 
 ### 🔗 Link do Figma
 

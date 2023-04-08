@@ -10,14 +10,14 @@
   --hue: 358;
   --brand-primary: hsl(var(--hue), 75%, 58%);
   --brand-light: hsl(var(--hue), 85%, 63%);
-  
+
   --headline-primary: hsl(209, 77%, 23%);
   --headline-secondary: hsl(47, 87%, 66%);
   --paragraph: #000000;
-  
+
   --border-light: hsla(0, 0%, 100%, 0.2);
   --border-beige: hsla(var(--hue), 85%, 63%, 0.3);
-  
+
   --bg-light: #ffffff;
   --bg-beige: hsla(calc(var(--hue) - 2), 81%, 96%, 0.5);
 
@@ -37,6 +37,15 @@ body {
   overflow: overlay;
 
   background-color: var(--bg-light);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--brand-primary);
+  border-radius: 8px;
 }
 
 ul {
@@ -109,7 +118,7 @@ section .button {
   align-items: center;
   justify-content: center;
   width: fit-content;
-  padding: 1.833rem;
+  padding: 1.83rem;
 
   font-size: 1.4rem;
   font-weight: 800;
@@ -152,7 +161,7 @@ nav .col-b {
 nav button {
   border: none;
   border-radius: 0.83rem;
-  
+
   background-color: var(--bg-light);
   cursor: pointer;
   padding: 1.2rem;
@@ -172,14 +181,14 @@ nav button {
 .menu {
   top: 0;
   left: 0;
-  
+
   width: 100%;
   height: 100vh;
   padding: 2.7rem 2rem;
-  
+
   margin-top: var(--nav-height);
   border-top: 1px solid var(--border-light);
-  
+
   background: var(--brand-primary);
   transform: scale(0);
 }
@@ -332,6 +341,7 @@ body.menu-expanded .menu {
   width: min(50rem, 100%);
   height: 34.8rem;
   margin-top: 3.6rem;
+  border-radius: 2rem;
 
   background-image: url("./assets/app-preview-mobile.png");
   background-size: cover;
@@ -403,17 +413,164 @@ body.menu-expanded .menu {
   display: none;
 }
 
+/*=== ABOUT =============================*/
+
+#about {
+  height: 68.4rem;
+  margin-inline: 2rem;
+  padding-block: 6rem 5.3rem;
+}
+
+#about .wrapper {
+  padding-inline: 0;
+}
+
+#about .content p {
+  font-size: 2rem;
+  color: var(--headline-primary);
+
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+#about .col-b {
+  position: relative;
+  width: calc(100vw - 2.2rem);
+}
+
+#about .swiper-slide {
+  width: 82.25%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.9rem 1rem 2.22rem;
+
+  background: var(--bg-beige);
+  border: 1px solid var(--border-beige);
+  border-radius: 2rem;
+
+  font-size: 1.8rem;
+  line-height: 120%;
+  text-align: center;
+  color: var(--headline-primary);
+}
+
+#about .swiper-slide img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+#about .swiper-slide p {
+  font-weight: 700;
+  margin-top: 2.2rem;
+}
+
+#about .swiper-slide span {
+  font-weight: 400;
+  margin-top: 0.37rem;
+}
+
+/*=== CONTACT ===========================*/
+
+#contact {
+  margin-inline: 2rem;
+  margin-bottom: 3.4rem;
+  border-radius: 1rem;
+  background: var(--headline-primary);
+
+  position: relative;
+  z-index: 1;
+}
+
+#contact .wrapper {
+  padding-inline: 3.2rem;
+}
+
+#contact header h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.8rem;
+  color: var(--bg-light);
+}
+
+#contact .content a {
+  display: flex;
+  align-items: center;
+  gap: 0.69rem;
+
+  font-size: 1.4rem;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+
+  text-decoration: none;
+  color: var(--headline-secondary);
+}
+
+#contact .content svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+#contact .col-b {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 13.6rem;
+
+  background-image: url("./assets/contact-banner-mobile.png");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+/*=== FOOTER ============================*/
+
+footer {
+  height: 18.7rem;
+  background-color: var(--brand-primary);
+}
+
+footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.84rem;
+
+  padding-top: 4rem;
+}
+
+footer .logo-mobile svg {
+  width: 3.14rem;
+  height: 3.26rem;
+}
+
+footer .logo-desktop {
+  display: none;
+}
+
+footer .col-b {
+  font-size: 1.4rem;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+
+  color: var(--bg-light);
+}
+
+footer .col-b span {
+  margin-left: 2rem;
+}
+
 /*=== RESPONSIVO ========================*/
 
 @media (min-width: 1024px) {
-
   /*=== GERAL =============================*/
 
   .wrapper {
     width: 100%;
     margin-inline: 0;
     padding-inline: 7.78vw;
-    
+
     display: grid;
   }
 
@@ -430,7 +587,7 @@ body.menu-expanded .menu {
     position: absolute;
     top: 4rem;
     z-index: 0;
-    
+
     background: var(--brand-light);
   }
 
@@ -451,7 +608,7 @@ body.menu-expanded .menu {
   section header h4 {
     font-size: 1.4rem;
     line-height: 212%;
-  
+
     margin-bottom: 7rem;
   }
 
@@ -459,12 +616,12 @@ body.menu-expanded .menu {
     font-size: 7.2rem;
     margin-bottom: 8.1rem;
   }
-  
+
   /*=== MENU-EXPANDED =====================*/
 
   .menu {
     position: initial;
-    
+
     width: 53.54vw;
     height: auto;
     padding: 0;
@@ -489,24 +646,24 @@ body.menu-expanded .menu {
   .close-menu {
     display: none;
   }
-  
+
   /*=== HOME ==============================*/
 
   #home {
-    height: auto;
+    height: 82rem;
     padding-top: 20.8rem;
     padding-bottom: 0;
   }
-  
+
   #home .wrapper {
     grid-template-columns: 36.11vw 48.89vw;
-    grid-template-areas: 'A B';
+    grid-template-areas: "A B";
     gap: 7.22vw;
 
     padding-right: 0;
     height: 61.2rem;
   }
-  
+
   #home .col-a {
     height: 61.2rem;
   }
@@ -531,9 +688,9 @@ body.menu-expanded .menu {
   }
 
   #home .content p {
-    display: block; 
+    display: block;
   }
-  
+
   #home .col-b {
     position: relative;
     top: -12.1rem;
@@ -546,15 +703,16 @@ body.menu-expanded .menu {
     background-position: left top;
     background-repeat: no-repeat;
   }
-  
+
   #home .button {
-    width: 49.2rem;
+    width: calc(100% - 10rem);
+    max-width: 49.2rem;
     height: 7.2rem;
     padding: 1.9rem;
-    
+
     font-size: 2rem;
     line-height: 170%;
-    
+
     bottom: 11.8rem;
     left: 5rem;
     transform: translateX(0%);
@@ -569,7 +727,7 @@ body.menu-expanded .menu {
 
   #info .wrapper {
     grid-template-columns: 45.69vw 41.11vw;
-    grid-template-areas: 'A B';
+    grid-template-areas: "A B";
     gap: 3.82vw;
 
     padding-left: 1.6vw;
@@ -600,7 +758,7 @@ body.menu-expanded .menu {
 
   #info .col-b {
     grid-area: A;
-    
+
     position: relative;
     top: -4.3rem;
 
@@ -613,7 +771,7 @@ body.menu-expanded .menu {
     background-position: center bottom;
     background-repeat: no-repeat;
   }
-  
+
   /*=== ANIMALS ===========================*/
 
   #animals {
@@ -624,12 +782,12 @@ body.menu-expanded .menu {
 
   #animals .wrapper {
     grid-template-columns: 28.89vw 34.03vw;
-    grid-template-areas: 'A B';
+    grid-template-areas: "A B";
     gap: 7.08vw;
 
     padding-inline: 7.22vw;
   }
-  
+
   #animals .col-a,
   #animals .col-b,
   #animals .swiper-container {
@@ -687,7 +845,7 @@ body.menu-expanded .menu {
     font-weight: 700;
     font-size: 2.47rem;
   }
-    
+
   #animals .hide {
     display: flex;
   }
@@ -738,5 +896,118 @@ body.menu-expanded .menu {
 
     background: var(--bg-light);
     color: var(--paragraph);
+  }
+
+  /*=== ABOUT =============================*/
+
+  #about {
+    height: auto;
+    margin-inline: 7.78vw;
+    padding-block: 8.3rem 10rem;
+  }
+
+  #about .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6.1rem;
+  }
+
+  #about .col-a {
+    display: flex;
+    align-items: center;
+    gap: 4.4rem;
+  }
+
+  #about header h2 {
+    font-size: 4.8rem;
+    line-height: 90%;
+  }
+
+  #about .content p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #about .col-b {
+    position: static;
+    width: 100%;
+  }
+
+  #about .swiper-slide {
+    width: 19.31vw;
+  }
+
+  /*=== CONTACT ===========================*/
+
+  #contact {
+    margin-inline: 7.78vw;
+    margin-bottom: 17.5rem;
+    border-radius: 2rem;
+  }
+
+  #contact .wrapper {
+    display: flex;
+    padding-inline: 7.22vw;
+  }
+
+  #contact header h2 {
+    font-size: 4.8rem;
+    line-height: 90%;
+
+    margin-top: 0.4rem;
+    margin-bottom: 3.4rem;
+  }
+
+  #contact .content a {
+    gap: 1rem;
+    font-size: 2rem;
+  }
+
+  #contact .content svg {
+    width: 3.3rem;
+    height: 3.3rem;
+  }
+
+  #contact .col-b {
+    left: 6.74vw;
+    top: -4rem;
+
+    width: 77.71vw;
+    height: 46.5rem;
+
+    background-image: url("./assets/contact-banner-desktop.png");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  /*=== FOOTER ============================*/
+
+  footer {
+    height: 10rem;
+  }
+
+  footer .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 2.7rem;
+  }
+
+  footer .logo-mobile {
+    display: none;
+  }
+
+  footer .logo-desktop {
+    display: flex;
+  }
+
+  footer .logo-desktop svg {
+    width: 17.7rem;
+    height: 4.61rem;
+  }
+
+  footer .col-b {
+    font-size: 1.6rem;
   }
 }
